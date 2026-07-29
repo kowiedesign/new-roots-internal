@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Roots Internal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Roots Collective — Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="dashboard">
 
-<h1>New Roots Internal Website</h1>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">New Roots Collective</span>
+      <span class="brand-sub">Internal</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav class="toplinks" id="topLinks">
+      <a href="index.html" data-nav="dashboard">Dashboard</a>
+      <a href="pages/decision.html" data-nav="decision">Decision</a>
+      <a href="pages/immigration.html" data-nav="immigration">Immigration</a>
+      <a href="pages/finances.html" data-nav="finances">Finances</a>
+      <a href="pages/operations.html" data-nav="operations">Operations</a>
+    </nav>
+  </div>
+</header>
 
-<p>If you can see this, GitHub Pages is working!</p>
+<main class="page">
 
+  <div class="dash-hero">
+    <span class="rec-badge">Proceed with diligence</span>
+    <h1>Sapana Restaurant Acquisition</h1>
+    <div class="sub">Founding business of New Roots Collective — Yamanashi</div>
+    <div class="rec-row">
+      <div class="rec-text">
+        The core logic holds up: an operating restaurant, an owner who wants to stay on and needs a stable visa outcome, and a trusted local advisor already invested in the result. Nothing found so far is a fundamental blocker. Verified financials and written immigration guidance are the two gating items before a final decision.
+      </div>
+      <div class="rec-meta">
+        <div><strong>Last updated:</strong> 2026-07-28</div>
+        <div><strong>Site version:</strong> v0.6</div>
+        <div><strong>Status:</strong> Draft / pre-decision</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <a class="card" href="pages/decision.html">
+      <div class="card-title">Decision Document</div>
+      <p class="card-desc">The ten-year question, executive summary, background, local trust, long-term opportunity and flexibility, decision checklist.</p>
+    </a>
+    <a class="card" href="pages/immigration.html">
+      <div class="card-title">Immigration</div>
+      <p class="card-desc">Business Manager visa reform, the owner's expected visa path, our own status, and current Permanent Residency policy changes.</p>
+    </a>
+    <a class="card" href="pages/finances.html">
+      <div class="card-title">Finances</div>
+      <p class="card-desc">Acquisition structure options, purchase price approach, capital risk, and rough financial estimates.</p>
+    </a>
+    <a class="card" href="pages/operations.html">
+      <div class="card-title">Operations</div>
+      <p class="card-desc">Staff, lease, licenses, supplier continuity, and acquisition mistakes to guard against.</p>
+    </a>
+  </div>
+
+  <div class="dash-section">
+    <h2>Recent Changes</h2>
+    <table>
+      <tr><th>Version</th><th>Date</th><th>Summary</th></tr>
+      <tr><td>v0.6</td><td>2026-07-28</td><td>Rebuilt as a multi-page site (dashboard + four documents). Added confirmed/proposed/speculative Permanent Residency policy tracker. Removed manufactured risk pairings (e.g., Minobu advisor is listed as a benefit only).</td></tr>
+      <tr><td>v0.5</td><td>2026-07-27</td><td>Reframed around a ten-year decision question. Added Long-Term Flexibility and Local Trust sections.</td></tr>
+      <tr><td>v0.4</td><td>2026-07-27</td><td>Restructured into a concise executive memorandum with a companion website.</td></tr>
+    </table>
+  </div>
+
+  <div class="dash-section">
+    <h2>Open Questions (top priority, across all documents)</h2>
+    <table>
+      <tr><th>Question</th><th>Area</th><th>Document</th></tr>
+      <tr><td>What are the restaurant's real, verified financials?</td><td>Financial</td><td><a href="pages/finances.html">Finances</a></td></tr>
+      <tr><td>Is a chef/skilled-labor visa realistically available to the owner?</td><td>Immigration</td><td><a href="pages/immigration.html">Immigration</a></td></tr>
+      <tr><td>What do the lease terms actually say?</td><td>Operations</td><td><a href="pages/operations.html">Operations</a></td></tr>
+      <tr><td>What visa category does each staff member hold?</td><td>Immigration / Operations</td><td><a href="pages/immigration.html">Immigration</a></td></tr>
+      <tr><td>What is a fair purchase price?</td><td>Financial</td><td><a href="pages/finances.html">Finances</a></td></tr>
+      <tr><td>Does the ¥30M Business Manager threshold apply to us under any scenario?</td><td>Immigration</td><td><a href="pages/immigration.html">Immigration</a></td></tr>
+    </table>
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  New Roots Collective — internal working site. Not a substitute for professional legal, tax, immigration, or accounting advice.
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
